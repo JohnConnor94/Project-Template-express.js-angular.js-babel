@@ -18,8 +18,18 @@ Run npm install to get all node relatives libraries and dependencies.
  │   ├ styles               # css stylesheet
  │   ├ index.html           # main html file
  │   └ lib                  # put here all others libraries in js files
+ │
+ ├ js-transpiled            # all js transpiled by babel. mirroring part of the client dir structure
+ │   ├ core                 #
+ │   ├ controllers          #
+ │   ├ directives           #
+ │   ├ filters              #
+ │   ├ services             #
+ │   └ lib                  # 
+ │
  ├ server                   # backend directory
- │   └ server.js            # simple and minimal configuration fror express app 
+ │   └ server.js            # simple and minimal configuration fror express app
+ │
  ├ .gitignore
  ├ .config.json             # json file to load common configuration, (possbily used by nconf)
  ├ package-lock.json

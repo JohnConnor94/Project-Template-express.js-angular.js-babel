@@ -5,12 +5,14 @@
   "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/server.js",
-    "debug": "nodemon server/server.js"
+    "start": "npm run build-frontend && node server/server.js",
+    "debug": "nodemon server/server.js",
+    "build-frontend": "node transpiler.babel.js"
   },
   "author": "Ignazio Messina",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.6.0",
     "body-parser": "^1.19.0",
     "clone": "^2.1.2",
     "express": "^4.17.1",
@@ -21,6 +23,9 @@
     "sha.js": "^2.4.11"
   },
   "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "jshint": "^2.10.2",
     "nodemon": "^1.19.2"
   },
