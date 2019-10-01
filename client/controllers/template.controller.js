@@ -3,5 +3,4 @@ angular
     .controller("nameCtrl", function ($scope) {
         // controller code goes here
 
-
     });

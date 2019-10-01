@@ -3,5 +3,4 @@ angular
     .controller("mainController", function ($scope) {
         // controller code goes here
 
-
     });

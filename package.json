@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build-frontend && node server/server.js",
-    "debug": "nodemon server/server.js",
-    "build-frontend": "node transpiler.babel.js"
+    "debug": "npm run watch:build-frontend && nodemon server/server.js",
+    "build-frontend": "node transpiler.babel.js",
+    "watch:build-frontend":"nodemon --watch client/ -x \"npm run build-frontend\""
   },
   "author": "Ignazio Messina",
   "license": "ISC",
